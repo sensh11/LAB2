@@ -1,3 +1,5 @@
+package list;
+
 import java.util.Iterator;
 
 public class MyArrayList<T> implements MyList<T> {
@@ -151,8 +153,8 @@ public class MyArrayList<T> implements MyList<T> {
 
 
     @Override
-    public Object[] toArray() {
-        Object[] newArray = new Object[size];
+    public T[] toArray() {
+        T[] newArray = (T[]) new Object[size];
         System.arraycopy(arr , 0 , newArray,0,size);
         return newArray;
     }

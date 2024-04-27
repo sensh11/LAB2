@@ -1,3 +1,5 @@
+package list;
+
 public interface MyList<T> extends Iterable<T> {
     void add(T item);
     void set(int index, T item );
@@ -11,13 +13,12 @@ public interface MyList<T> extends Iterable<T> {
     void removeFirst ();
     void removeLast();
     void sort();
-    int indexOf (Object object);
-    int lastIndexOf (Object object);
-    boolean exists(Object object);
-    public Object[] toArray();
+    int indexOf (T object);
+    int lastIndexOf (T object);
+    boolean exists(T object);
+    public T[] toArray();
     void clear();
     int size();
-
 
 
 
