@@ -103,12 +103,7 @@ public class MyLinkedList<T extends Comparable<T>> implements MyList<T>  {
 
     @Override
     public T get(int index) {
-        checkIndex(index);
-        Node<T> current = head;
-        for (int i = 0; i < index; i++) {
-            current = current.next;
-        }
-        return current.item;
+        return getNodeAt(index + 1).item;
     }
 
 
